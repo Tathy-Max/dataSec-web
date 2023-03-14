@@ -3,7 +3,7 @@ import About from './components/about/About';
 import Tech from './components/tech/Tech';
 import Header from './components/header/Header';
 import Navbar from './components/navbar/Navbar';
-import Portfolio from './components/portfolio/Portfolio';
+import Courses from './components/courses/Courses';
 import Services from './components/services/Services';
 import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
@@ -17,7 +17,7 @@ const App = () => {
 			<About />
 			<Tech />
 			<Services />
-			<Portfolio />
+			<Courses />
 			<Testimonials />
 			<Contact />
 			<Footer />

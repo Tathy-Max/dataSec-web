@@ -1,6 +1,7 @@
 import React from 'react';
 import './tech.css';
 import { BsPatchCheckFill } from 'react-icons/bs';
+import { FaAws } from 'react-icons/fa';
 
 const Tech = () => {
 	return (
@@ -67,7 +68,7 @@ const Tech = () => {
 							</div>
 						</article>
 						<article className="tech__details">
-							<BsPatchCheckFill className="tech__details-icon" />
+							<FaAws className="tech__details-icon" />
 							<div>
 								<h4>AWS</h4>
 								<small className="text-light">Experienced</small>

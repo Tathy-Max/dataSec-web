@@ -1,0 +1,41 @@
+.courses__container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2.5rem;
+}
+.courses__item {
+	background: var(--color-bg-variant);
+	padding: 1.3rem;
+	border-radius: 2rem;
+	border: 0.06rem solid transparent;
+	transition: var(--transition);
+}
+.courses__item:hover {
+	border-color: var(--color-primary-variant);
+	background: transparent;
+}
+.courses__item-image {
+	border-radius: 1.5rem;
+	overflow: hidden;
+}
+.courses__item-btn {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+//MEDIUM DEVICES
+@media screen and (max-width: 1024px) {
+	.courses__container {
+		grid-template-columns: 1fr 1fr;
+		gap: 1.2rem;
+	}
+}
+
+//SMALL DEVICES
+@media screen and (max-width: 600px) {
+	.courses__container {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+}

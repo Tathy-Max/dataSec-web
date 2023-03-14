@@ -2,7 +2,7 @@ nav {
 	background: rgba(0, 0, 0, 0.3);
 	width: max-content;
 	display: block;
-	padding: 0.9rem 1.9rem;
+	padding: 0.8rem 1.8rem;
 	z-index: 2;
 	position: fixed;
 	left: 50%;
@@ -19,7 +19,7 @@ nav a {
 	border-radius: 50%;
 	display: flex;
 	/* color: var(--color-light); */
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 }
 nav a:hover {
 	background: rgba(0, 0, 0, 0.3);

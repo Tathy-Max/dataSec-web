@@ -52,7 +52,7 @@
 }
 .about__card h5 {
 	font-size: 0.95rem;
-	/* color: var(--color-yellow); */
+	color: var(--color-yellow);
 }
 .about__card small {
 	font-size: 0.7rem;

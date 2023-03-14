@@ -2,6 +2,7 @@ import React from 'react';
 import './navbar.css';
 import { AiFillHome } from 'react-icons/ai';
 import { HiInformationCircle } from 'react-icons/hi';
+import { FaLaptopCode } from 'react-icons/fa';
 import { MdOutlineMiscellaneousServices } from 'react-icons/md';
 import { BsFillPeopleFill } from 'react-icons/bs';
 import { IoMdMail } from 'react-icons/io';
@@ -24,6 +25,13 @@ const Nav = () => {
 				className={activeNav === '#about' ? 'active' : ''}
 			>
 				<HiInformationCircle />
+			</a>
+			<a
+				href="#tech"
+				onclick={() => setActiveNav('#tech')}
+				className={activeNav === '#tech' ? 'active' : ''}
+			>
+				<FaLaptopCode />
 			</a>
 			<a
 				href="#services"

@@ -7,6 +7,8 @@ import Course4 from '../../assets/portfolio4.jpg';
 import Course5 from '../../assets/portfolio5.png';
 import Course6 from '../../assets/portfolio6.jpg';
 
+// const data = [{}] if we wnat to get data from an array
+
 const Courses = () => {
 	return (
 		<section id="courses">

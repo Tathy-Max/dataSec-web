@@ -7,7 +7,7 @@ import HeaderSocials from './HeaderSocials';
 function Header() {
 	return (
 		<header>
-			<div className="container header__container">
+			<div id="header" className="container header__container">
 				<h5>Computer and Network Security - Sao Paulo-SP</h5>
 				<h1>TECNOLOGIA E SEGURANCA CIBERNETICA ACESSIVEL</h1>
 				<h5 className="text-light">

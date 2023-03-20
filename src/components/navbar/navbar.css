@@ -1,16 +1,25 @@
 nav {
 	background: rgba(0, 0, 0, 0.3);
-	width: max-content;
-	display: block;
+	/* width: max-content; */
+
+	width: 100%;
+
+	/* display: block; */
+
+	display: flex;
+	justify-content: flex-end;
+
 	padding: 0.8rem 1.8rem;
 	z-index: 2;
 	position: fixed;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 2rem;
+	/* left: 50%;
+	transform: translateX(-50%); */
+	/* bottom: 2rem; */
+
 	display: flex;
-	gap: 1rem;
-	border-radius: 3rem;
+	gap: 1.2rem;
+	/* border-radius: 3rem; */
+
 	backdrop-filter: blur(0.9rem);
 }
 nav a {
@@ -19,7 +28,7 @@ nav a {
 	border-radius: 50%;
 	display: flex;
 	/* color: var(--color-light); */
-	font-size: 1.4rem;
+	font-size: 1.1rem;
 }
 nav a:hover {
 	background: rgba(0, 0, 0, 0.3);
@@ -27,5 +36,28 @@ nav a:hover {
 }
 nav a.active {
 	background: var(--color-bg);
-	color: var(--color-white);
+	/* color: var(--color-white); */
+	color: var(--color-yellow);
+}
+
+nav a:hover {
+	background: rgba(0, 0, 0, 0.3);
+	/* background: var(--color-bg); */
+	color: var(--color-yellow);
+}
+
+nav h5 {
+	font-size: 1rem;
+	background: transparent;
+	color: var(--color-primary);
+}
+nav h5:hover {
+	background: rgba(0, 0, 0, 0.3);
+}
+.text-icon {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }

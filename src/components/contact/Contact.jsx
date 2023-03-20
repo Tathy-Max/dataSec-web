@@ -83,7 +83,7 @@ const Contact = () => {
 						})}
 					/>
 					{errors.name && (
-						<p className="mt-1 text-primary-500">
+						<p>
 							{errors.name.type === 'required' && 'Esse campo é obrigatório.'}
 							{errors.name.type === 'maxLength' &&
 								'Tamanho maximo é 100 caracteres.'}
@@ -99,7 +99,7 @@ const Contact = () => {
 						})}
 					/>
 					{errors.email && (
-						<p className="mt-1 text-primary-500">
+						<p>
 							{errors.email.type === 'required' && 'Esse campo é obrigatório.'}
 							{errors.email.type === 'pattern' && 'Email invalido.'}
 						</p>
@@ -114,7 +114,7 @@ const Contact = () => {
 						})}
 					/>
 					{errors.message && (
-						<p className="mt-1 text-primary-500">
+						<p>
 							{errors.message.type === 'required' &&
 								'Esse campo é obrigatório.'}
 							{errors.message.type === 'maxLength' &&

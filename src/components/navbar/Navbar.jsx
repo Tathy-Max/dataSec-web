@@ -13,27 +13,36 @@ const Nav = () => {
 	const [activeNav, setActiveNav] = useState('#');
 	return (
 		<nav>
-			<a
-				href="#header"
-				onclick={() => setActiveNav('#')}
-				className={activeNav === '#' ? 'active' : ''}
-			>
-				<AiFillHome />
-			</a>
-			<a
-				href="#about"
-				onclick={() => setActiveNav('#about')}
-				className={activeNav === '#about' ? 'active' : ''}
-			>
-				<HiInformationCircle />
-			</a>
-			<a
-				href="#tech"
-				onclick={() => setActiveNav('#tech')}
-				className={activeNav === '#tech' ? 'active' : ''}
-			>
-				<FaLaptopCode />
-			</a>
+			<div>
+				<a
+					href="#header"
+					onclick={() => setActiveNav('#')}
+					className={activeNav === '#' ? 'active' : ''}
+				>
+					<AiFillHome />
+				</a>
+				<h5>Home</h5>
+			</div>
+			<div>
+				<a
+					href="#about"
+					onclick={() => setActiveNav('#about')}
+					className={activeNav === '#about' ? 'active' : ''}
+				>
+					<HiInformationCircle />
+				</a>
+				<h5>About</h5>
+			</div>
+			<div className="text-icon">
+				<a
+					href="#tech"
+					onclick={() => setActiveNav('#tech')}
+					className={activeNav === '#tech' ? 'active' : ''}
+				>
+					<FaLaptopCode />
+				</a>
+				<h5>Technologies</h5>
+			</div>
 			<a
 				href="#services"
 				onclick={() => setActiveNav('#services')}
@@ -41,6 +50,7 @@ const Nav = () => {
 			>
 				<MdOutlineMiscellaneousServices />
 			</a>
+
 			<a
 				href="#courses"
 				onclick={() => setActiveNav('#services')}
@@ -55,6 +65,7 @@ const Nav = () => {
 			>
 				<BsFillPeopleFill />
 			</a>
+
 			<a
 				href="#contact"
 				onclick={() => setActiveNav('#contact')}

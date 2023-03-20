@@ -5,6 +5,8 @@ import { FaAward } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import { VscFolderLibrary } from 'react-icons/vsc';
 
+import { motion } from 'framer-motion';
+
 const About = () => {
 	return (
 		<section id="about">
@@ -17,7 +19,17 @@ const About = () => {
 					</div>
 				</div>
 
-				<div className="about__content">
+				<motion.div
+					className="about__content"
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true, amount: 0.5 }}
+					transition={{ duration: 1.5 }}
+					variants={{
+						hidden: { opacity: 0, x: -50 },
+						visible: { opacity: 1, x: 0 },
+					}}
+				>
 					<div className="about__cards">
 						<article className="about__card">
 							<FaAward className="about__icon" />
@@ -50,7 +62,7 @@ const About = () => {
 					<a href="#contact" className="btn btn-primary">
 						Fale Conosco
 					</a>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);

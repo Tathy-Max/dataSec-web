@@ -8,13 +8,16 @@ function Header() {
 	return (
 		<header>
 			<div id="header" className="container header__container">
-				<h5>Computer and Network Security - Sao Paulo-SP</h5>
-				<h1>TECNOLOGIA E SEGURANCA CIBERNETICA ACESSIVEL</h1>
-				<h5 className="text-light">
-					Projetos e servicos de Tecnologia e Seguranca cibernetica
-				</h5>
-				<DS />
+				<div className="header__text">
+					<h5>Computer and Network Security - Sao Paulo-SP</h5>
+					<h1>TECNOLOGIA E SEGURANCA CIBERNETICA ACESSIVEL</h1>
+					<h5 className="text-light">
+						Projetos e servicos de Tecnologia e Seguranca cibernetica
+					</h5>
+					<DS />
+				</div>
 				<HeaderSocials />
+
 				<div className="logo">
 					<img src={LOGO} alt="dataSec" />
 				</div>

@@ -1,6 +1,6 @@
 header {
 	height: 100vh;
-	padding-top: 7rem;
+	padding-top: 10rem;
 	overflow: hidden;
 }
 .header__container {
@@ -9,6 +9,13 @@ header {
 	position: relative;
 }
 
+.header__text {
+	transition: transform 0.5s;
+	animation: fromRight 1s 0.5s backwards;
+}
+/* .header__text h5 {
+	color: var(--color-yellow);
+} */
 .ds {
 	margin-top: 2.5rem;
 	display: flex;
@@ -43,6 +50,8 @@ header {
 	border-radius: 12rem 12rem 0 0;
 	overflow: hidden;
 	padding: 5rem 1.5rem 1.5rem 1.5rem;
+	transition: transform 0.3s;
+	animation: fromTop 0.7s 0.2s backwards;
 }
 .scroll__down {
 	position: absolute;
@@ -67,5 +76,36 @@ header {
 	.header__socials,
 	.scroll__down {
 		display: none;
+	}
+}
+
+@keyframes fromTop {
+	from {
+		opacity: 0;
+		transform: translateY(-2rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fromBottom {
+	from {
+		opacity: 0;
+		transform: translateY(2rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fromRight {
+	from {
+		opacity: 0;
+		transform: translateX(-2rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
 	}
 }

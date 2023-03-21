@@ -2,13 +2,25 @@ import React from 'react';
 import './services.css';
 import { BiCheck } from 'react-icons/bi';
 
+import { motion } from 'framer-motion';
+
 const Services = () => {
 	return (
 		<section id="services">
 			<h5>What we offer</h5>
 			<h2>Servicos</h2>
 
-			<div className="container services__container">
+			<motion.div
+				className="container services__container"
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true, amount: 0.5 }}
+				transition={{ duration: 0.5 }}
+				variants={{
+					hidden: { opacity: 0, x: -50 },
+					visible: { opacity: 1, x: 0 },
+				}}
+			>
 				<article className="service">
 					<div className="service__head">
 						<h3>Consultoria para Defesa Cibernetica (SOC Advisor)</h3>
@@ -112,7 +124,7 @@ const Services = () => {
 						</li>
 					</ul>
 				</article>
-			</div>
+			</motion.div>
 		</section>
 	);
 };

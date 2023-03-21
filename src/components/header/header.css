@@ -13,9 +13,10 @@ header {
 	transition: transform 0.5s;
 	animation: fromRight 1s 0.5s backwards;
 }
-/* .header__text h5 {
-	color: var(--color-yellow);
-} */
+.header__text h1 {
+	/* color: var(--color-yellow); */
+	color: var(--color-primary);
+}
 .ds {
 	margin-top: 2.5rem;
 	display: flex;

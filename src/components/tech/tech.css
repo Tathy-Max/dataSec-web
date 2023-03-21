@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 2rem;
+	padding-top: 3rem;
 }
 .tech__container > div {
 	background: var(--color-bg-variant);
@@ -9,6 +10,8 @@
 	border-radius: 2rem;
 	border: 0.06rem solid transparent;
 	transition: var(--transition);
+	transition: transform 0.3s;
+	animation: fromBottom 0.7s 0.2s backwards;
 }
 .tech__container > div:hover {
 	background: transparent;

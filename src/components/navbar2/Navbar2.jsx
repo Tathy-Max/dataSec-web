@@ -48,7 +48,7 @@ function Navbar3() {
 					</a>
 				</li>
 				<li className="nav__item">
-					<a href="#cursos" className="nav__link">
+					<a href="#courses" className="nav__link">
 						Cursos
 					</a>
 				</li>

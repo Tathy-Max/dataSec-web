@@ -3,13 +3,25 @@ import './tech.css';
 import { BsPatchCheckFill } from 'react-icons/bs';
 import { FaAws } from 'react-icons/fa';
 
+import { motion } from 'framer-motion';
+
 const Tech = () => {
 	return (
 		<section id="tech">
 			<h5>We've been using</h5>
 			<h2>Technologies and Methodologies applied</h2>
 
-			<div className="container tech__container">
+			<motion.div
+				className="container tech__container"
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true, amount: 0.5, repeat: Infinity }}
+				transition={{ duration: 2.5 }}
+				variants={{
+					hidden: { opacity: 0, y: -50 },
+					visible: { opacity: 1, x: 0 },
+				}}
+			>
 				<div className="tech__technology">
 					<h3>Technologies</h3>
 					<div className="tech__content">
@@ -90,7 +102,7 @@ const Tech = () => {
 						</article>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</section>
 	);
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsLinkedin } from 'react-icons/bs';
-import { FaGithub } from 'react-icons/fa';
-// import { FiDribble } from 'react-icons/fi';
+import { BsTwitter } from 'react-icons/bs';
+import { BsYoutube } from 'react-icons/bs';
 
 const HeaderSocials = () => {
 	return (
@@ -11,21 +11,21 @@ const HeaderSocials = () => {
 				target="_blank"
 				rel="noreferrer"
 			>
-				<BsLinkedin />
+				<BsLinkedin className="header__socials__img" />
 			</a>
 			<a
 				href="https://www.linkedin.com/company/datasecbr/"
 				target="_blank"
 				rel="noreferrer"
 			>
-				<FaGithub />
+				<BsTwitter className="header__socials__img" />
 			</a>
 			<a
 				href="https://www.linkedin.com/company/datasecbr/"
 				target="_blank"
 				rel="noreferrer"
 			>
-				<FaGithub />
+				<BsYoutube className="header__socials__img" />
 			</a>
 		</div>
 	);

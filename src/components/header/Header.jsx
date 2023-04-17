@@ -9,18 +9,16 @@ function Header() {
 		<header>
 			<div id="header" className="container header__container">
 				<div className="header__text">
-					<h5>Computer and Network Security - Sao Paulo-SP</h5>
-					<h1>TECNOLOGIA E SEGURANCA CIBERNETICA ACESSIVEL</h1>
-					<h5 className="text-light">
-						Projetos e servicos de Tecnologia e Seguranca cibernetica
-					</h5>
+					{/* <h5>Computer and Network Security - Sao Paulo-SP</h5> */}
+					<p>SOC ADVISORY</p>
+					<h3>
+						Consultoria especializada na criacao, transformacao <br></br>e
+						maturidade da operacao de seguranca da sua empresa
+					</h3>
 					<DS />
+					<HeaderSocials />
 				</div>
-				<HeaderSocials />
 
-				<div className="logo">
-					<img src={LOGO} alt="dataSec" />
-				</div>
 				<a href="#contact" className="scroll__down">
 					Scroll Down
 				</a>

@@ -33,7 +33,7 @@ const Contact = () => {
 					<article className="contact__option">
 						<MdOutlineMarkEmailUnread className="contact__option-icon" />
 						<h4>Email</h4>
-						<h5>contato@datasec.com.br</h5>
+						<h5>contato@datasec.com</h5>
 						<a
 							href="mailto:contato@datasec.com.br"
 							target="_blank"

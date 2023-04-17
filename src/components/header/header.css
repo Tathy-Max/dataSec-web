@@ -2,41 +2,63 @@ header {
 	height: 100vh;
 	padding-top: 10rem;
 	overflow: hidden;
+	background-image: url('../../assets/vitrine.jpeg');
+	background-position: center;
+	background-position-x: right;
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+	transition: transform 0.3s;
+	animation: fromTop 0.7s 0.2s backwards;
 }
 .header__container {
-	text-align: center;
+	/* text-align: center; */
 	height: 100%;
 	position: relative;
+	display: flex;
+	direction: column;
 }
 
 .header__text {
+	/* position: relative; */
+	/* top: 190px;
+	right: 400px; */
+	margin-top: 10rem;
 	transition: transform 0.5s;
 	animation: fromRight 1s 0.5s backwards;
 }
-.header__text h1 {
-	/* color: var(--color-yellow); */
+.header__text p {
+	color: var(--color-yellow);
 	color: var(--color-primary);
+	font-size: 5rem;
+	font-weight: bold;
 }
 .ds {
-	margin-top: 2.5rem;
-	display: flex;
+	margin-top: 1.5rem;
+	/* display: flex; */
 	gap: 1.2rem;
-	justify-content: center;
+	/* justify-content: left; */
+	/* position: relative; */
+	top: 20px;
+	right: 110px;
 }
-
 .header__socials {
 	display: flex;
 	flex-direction: column;
-	algn-items: center;
+	margin-top: 8rem;
+	/* algn-items: center; */
 	gap: 0.8rem;
-	position: absolute;
+	/* position: absolute;
 	left: 0;
-	bottom: 3rem;
+	bottom: 3rem; */
+}
+.header__socials__img {
+	width: 30px;
+	height: 30px;
 }
 .header__socials::after {
 	content: '';
 	width: 0.06rem;
-	height: 2rem;
+	height: 2.4rem;
 	background: var(--color-primary);
 }
 .logo {
@@ -60,7 +82,7 @@ header {
 	bottom: 5rem;
 	transform: rotate(90deg);
 	font-weight: 300;
-	font-size: 0.9rem;
+	font-size: 1.1rem;
 }
 //MEDIUM DEVICES
 @media screen and (max-width: 1024px) {

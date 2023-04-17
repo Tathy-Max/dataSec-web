@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './navbar2.css';
-import Logo from '../../assets/logoDataSec.png';
+import Logo from '../../assets/logoDataSecW.png';
 
 function Navbar3() {
 	const [active, setActive] = useState('nav__menu');

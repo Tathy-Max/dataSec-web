@@ -5,7 +5,7 @@ const DS = () => {
 	return (
 		<div className="ds">
 			<a href={CV} download className="btn">
-				Download Syllabus
+				Download Data Sheet
 			</a>
 			<a href="#contact" className="btn btn-primary">
 				Fale Conosco
